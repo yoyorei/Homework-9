@@ -14,40 +14,67 @@
 
 <body>
     <script src="Scripts/umd/popper.min.js"></script>
-    <nav class="nav navbar navbar-expand-lg bg-light navbar-light">
-            <a class="navbar-brand" href="index.html"><strong>Lattitude</strong></a>
-            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <ul class="nav navbar-nav ml-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
-                  <a class="dropdown-item" href="humidity.html">Humidity</a>
-                  <a class="dropdown-item" href="cloud.html">Cloudiness</a>
-                  <a class="dropdown-item" href="wind.html">Wind Speed</a>
-                </div>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="comparison.html">Comparison</a></li>
-              <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
-            </ul>
+    <nav class="nav navbar navbar-toggleable-xs navbar-toggleable-sm navbar-expand-md navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><strong>Lattitude</strong></a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="navbar-collapse collapse" id="navbarNav">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloud.html">Cloudiness</a>
+                <a class="dropdown-item" href="wind.html">Wind Speed</a>
             </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="comparison.html">Comparison</a></li>
+            <li class="nav-item"><a class="nav-link" href="data.html">Data</a></li>
+        </ul>
+        </div>
     </nav>
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-8" "col-md-8" "col-sm-12" "col-xs-12">
-                <h1>Wind Speed</h1>
-                <figure>
-                    <img class="img-fluid" src="Resources/assets/images/Fig3.png" alt="wind">
-                    <figcaption>Wind</figcaption>
-                </figure>
+            <div class="col-lg-8 col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title"><strong>Cloudiness</strong></h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                        <img class="img-fluid" src="Resources/assets/images/Fig3.png" alt="cloudiness">
+                        There is no significant trends along Latitude that could be concluded in terms of cloudiness. The 
+                        northern hemisphere has slightly more clouds than the southern hemisphere though. Interestingly, 
+                        the cloudiness along the equator (0 Deg. Latitude) is no more or less than the other areas of earth.
+                        </li>
+                    </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-4" "col-md-4" "col-sm-12" "col-xs-12">
-                <h2>Visualization</h2>
+
+            <div class="col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title"><strong>Visualizations</strong></h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item mx-auto text-center">
+                            <a href="maxtemp.html">
+                                <img height="130" width="130" src="Resources/assets/images/Fig1.png" alt="fig1"></a>
+                            <a href="humidity.html">
+                                <img height="130" width="130" src="Resources/assets/images/Fig2.png" alt="fig2"></a>
+                            <a href="cloud.html">
+                                <img id="fig" height="130" width="130" src="Resources/assets/images/Fig3.png" alt="fig3"></a>
+                            <a href="wind.html">
+                                <img height="130" width="130" src="Resources/assets/images/Fig4.png" alt="fig4"></a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
 </body>
-
 </html>
