@@ -1,0 +1,24 @@
+body
+{background:#EDEDED}
+
+.container
+{margin: 30px;}
+
+.navbar-brand
+{margin-left:100px;
+margin-top:0px;
+padding-left:10px;
+padding-right:10px;
+padding-top:5px;
+padding-bottom: 5px;
+font-size: 25px;
+background: #0BACA6;
+font-family: 'Times New Roman', Times, serif;}
+
+.nav-item
+{margin-right:15px;}
+
+.navbar{padding:0px;}
+
+.navbar-light .navbar-brand
+{color:snow;}
